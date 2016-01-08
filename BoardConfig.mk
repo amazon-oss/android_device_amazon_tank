@@ -8,6 +8,10 @@ DEVICE_PATH := device/amazon/tank
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := tank
 
+# Dexpreopt
+WITH_DEXPREOPT := true
+WITH_DEXPREOPT_PIC := true
+
 # Kernel
 TARGET_KERNEL_ADDITIONAL_CONFIG := tank.config
 
