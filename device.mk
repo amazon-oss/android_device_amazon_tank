@@ -103,3 +103,6 @@ $(call inherit-product, device/amazon/mt8127-common/mt8127.mk)
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/amazon/tank/tank-vendor.mk)
+
+# Inherit the prebuilt ATV common apps
+$(call inherit-product, vendor/google/atv/atv-common.mk)
