@@ -1,3 +1,6 @@
 # Display
 persist.sys.resolution.auto=1
 ro.sf.lcd_density=320
+
+# SurfaceFlinger
+debug.sf.latch_unsignaled=1
