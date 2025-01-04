@@ -17,6 +17,9 @@
         <item>"9,1"</item>
     </string-array>
 
+    <!-- Home -->
+    <integer name="config_longPressOnHomeBehavior">2</integer>
+
     <!-- NTP -->
     <integer name="config_ntpRetry">-1</integer>
 
