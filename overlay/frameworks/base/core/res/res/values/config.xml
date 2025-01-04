@@ -4,6 +4,9 @@
     SPDX-License-Identifier: Apache-2.0
 -->
 <resources>
+    <!-- Audio -->
+    <bool name="config_useFixedVolume">true</bool>
+
     <!-- Connectivity -->
     <string-array name="networkAttributes" translatable="false">
         <item>"ethernet,9,9,9,-1,true"</item>
