@@ -14,6 +14,9 @@ TARGET_SCREEN_WIDTH := 1920
 # Characteristics
 PRODUCT_CHARACTERISTICS := tv,nosdcard
 
+# Charger
+WITH_CM_CHARGER := false
+
 # Dalvik
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.heapgrowthlimit=128m \
