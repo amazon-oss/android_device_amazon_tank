@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-FileCopyrightText: The LineageOS Project
+    SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <!-- Accessories -->
+    <string name="accessories_add_bluetooth_inst_cm">To start using LineageOS make sure your Bluetooth device is in pairing mode. For Amazon Fire Remotes this is done by pressing home for about 10 seconds.</string>
+</resources>
