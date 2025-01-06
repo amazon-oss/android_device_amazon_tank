@@ -86,6 +86,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/bin/init.btmac.sh:system/bin/init.btmac.sh \
     $(LOCAL_PATH)/rootdir/etc/init.device.rc:root/init.device.rc
 
+# TV
+PRODUCT_PACKAGES += \
+    LineageCustomizer
+
 # USB
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.usb.accessory.xml:system/etc/permissions/android.hardware.usb.accessory.xml \
