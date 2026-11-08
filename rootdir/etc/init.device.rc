@@ -18,6 +18,10 @@ on post-fs-data
     # HDMI
     chmod 0664 /dev/hdmitx
 
+on boot
+    # Power
+    write /sys/power/wake_lock disablesuspend
+
 # Bluetooth
 service btmac /system/bin/init.btmac.sh
     user bluetooth
