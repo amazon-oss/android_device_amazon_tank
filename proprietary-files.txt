@@ -25,6 +25,16 @@ lib/libhdmiservice.so
 # HDMI-CEC
 lib/hw/hdmi_cec.default.so:lib/hw/hdmi_cec.amazon.mt8127.so
 
+# Media
+lib/libMtkOmxCore.so
+lib/libMtkOmxMp3Dec.so
+lib/libMtkOmxVdec.so
+lib/libMtkOmxVenc.so
+lib/libmp2dec_sa.ca7.so
+lib/libvcodec_oal.so
+lib/libvcodec_utility.so
+lib/libvcodecdrv.so
+
 # NVRAM
 bin/nvram_agent_binder
 lib/libcustom_nvram.so

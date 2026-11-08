@@ -47,6 +47,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.hwui.r_buffer_cache_size=8 \
     ro.hwui.texture_cache_size=45
 
+# Media
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/media/media_codecs.xml:system/etc/media_codecs.xml \
+    $(LOCAL_PATH)/configs/media/mtk_omx_core.cfg:system/etc/mtk_omx_core.cfg
+
 # Rootdir
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/init.device.rc:root/init.device.rc

@@ -30,6 +30,14 @@ function blob_fixup() {
             # Keep the dequeue limit when the swap interval changes
             sigscan "01 10 6c 00 08 10 87 e5" "01 10 6c 00 00 f0 20 e3" "${2}"
             ;;
+        lib/libMtkOmxVdec.so)
+            add_needed libui_shim.so "${2}"
+            ;;
+        lib/libMtkOmxVenc.so)
+            # Allocate the Nougat sized GraphicBuffer
+            sigscan "07 af 80 20 d9 b1" "07 af 88 20" "${2}"
+            add_needed libui_shim.so "${2}"
+            ;;
     esac
 }
 
