@@ -11,6 +11,10 @@ PRODUCT_AAPT_PREF_CONFIG := xhdpi
 ADDITIONAL_DEFAULT_PROPERTIES += \
     ro.adb.secure=0
 
+# Audio
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/audio/audio_policy.conf:system/etc/audio_policy.conf
+
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1080
 TARGET_SCREEN_WIDTH := 1920

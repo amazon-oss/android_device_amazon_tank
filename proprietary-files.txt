@@ -1,5 +1,12 @@
 # Unpinned blobs from full_tank-user 5.1.1 LVY48F 288.6.8.8_user_688806320 release-keys
 
+# Audio
+lib/hw/audio.primary.mt8127.so
+lib/libaudiocomponentengine.so
+lib/libbessound_hd_mtk.so
+lib/libspeech_enh_lib.so
+vendor/lib/libdlb_converter.so
+
 # Display
 bin/mdp_server
 lib/hw/gralloc.mt8127.so
