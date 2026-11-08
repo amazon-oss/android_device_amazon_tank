@@ -7,6 +7,10 @@
 PRODUCT_AAPT_CONFIG := xhdpi
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
 
+# Boot animation
+TARGET_SCREEN_HEIGHT := 1080
+TARGET_SCREEN_WIDTH := 1920
+
 # Characteristics
 PRODUCT_CHARACTERISTICS := tv,nosdcard
 
