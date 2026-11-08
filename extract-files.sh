@@ -38,6 +38,17 @@ function blob_fixup() {
             sigscan "07 af 80 20 d9 b1" "07 af 88 20" "${2}"
             add_needed libui_shim.so "${2}"
             ;;
+        usr/keylayout/*.kl)
+            # Map key labels that Nougat does not know
+            sed -i -E \
+                -e '/^key\s+[0-9]+\s+SHOP\b/d' \
+                -e 's/^(key\s+[0-9]+\s+)APP_([1-4])\b/\1BUTTON_\2/' \
+                -e 's/^(key\s+[0-9]+\s+)APP_5\b/\1BUTTON_MODE/' \
+                -e 's/^(key\s+[0-9]+\s+)HASH\b/\1POUND/' \
+                -e 's/^(key\s+[0-9]+\s+)LIVE_TV\b/\1TV/' \
+                -e 's/^(key\s+[0-9]+\s+)RECENTS\b/\1APP_SWITCH/' \
+                "${2}"
+            ;;
     esac
 }
 
