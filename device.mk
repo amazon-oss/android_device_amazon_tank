@@ -15,6 +15,14 @@ ADDITIONAL_DEFAULT_PROPERTIES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/audio_policy.conf:system/etc/audio_policy.conf
 
+# Bluetooth
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.bluetooth.xml:system/etc/permissions/android.hardware.bluetooth.xml \
+    frameworks/native/data/etc/android.hardware.bluetooth_le.xml:system/etc/permissions/android.hardware.bluetooth_le.xml
+
+PRODUCT_PACKAGES += \
+    libbt-vendor
+
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1080
 TARGET_SCREEN_WIDTH := 1920
@@ -54,6 +62,7 @@ PRODUCT_COPY_FILES += \
 
 # Rootdir
 PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/bin/init.btmac.sh:system/bin/init.btmac.sh \
     $(LOCAL_PATH)/rootdir/etc/init.device.rc:root/init.device.rc
 
 # Wi-Fi

@@ -4,8 +4,22 @@
 #
 
 on post-fs-data
+    # Bluetooth
+    chmod 0660 /dev/ttyMT1
+    chown bluetooth bluetooth /dev/ttyMT1
+    chmod 0660 /sys/devices/platform/bluetooth_rfkill/rfkill/rfkill0/state
+    chown bluetooth bluetooth /sys/devices/platform/bluetooth_rfkill/rfkill/rfkill0/state
+    start btmac
+
     # HDMI
     chmod 0664 /dev/hdmitx
+
+# Bluetooth
+service btmac /system/bin/init.btmac.sh
+    user bluetooth
+    group bluetooth
+    disabled
+    oneshot
 
 # Display
 service mdp_server /system/bin/mdp_server

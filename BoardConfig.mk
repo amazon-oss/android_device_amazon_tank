@@ -5,6 +5,11 @@
 
 DEVICE_PATH := device/amazon/tank
 
+# Bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
+BOARD_CUSTOM_BT_CONFIG := $(DEVICE_PATH)/bluetooth/vnd_tank.txt
+BOARD_HAVE_BLUETOOTH_BCM := true
+
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := tank
 

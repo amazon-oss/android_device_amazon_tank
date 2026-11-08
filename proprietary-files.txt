@@ -7,6 +7,9 @@ lib/libbessound_hd_mtk.so
 lib/libspeech_enh_lib.so
 vendor/lib/libdlb_converter.so
 
+# Bluetooth
+vendor/firmware/BCM43569A2_001.003.004.1001.0000_Generic_UART_40MHz_fcbga_BU_AmazonTank.hcd
+
 # Display
 bin/mdp_server
 lib/hw/gralloc.mt8127.so
