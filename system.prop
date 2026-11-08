@@ -2,5 +2,8 @@
 persist.sys.resolution.auto=1
 ro.sf.lcd_density=320
 
+# HDMI-CEC
+ro.hdmi.device_type=4
+
 # SurfaceFlinger
 debug.sf.latch_unsignaled=1

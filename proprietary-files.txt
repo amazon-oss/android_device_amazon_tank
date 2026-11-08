@@ -15,6 +15,9 @@ lib/libqservice.so
 bin/hdmi
 lib/libhdmiservice.so
 
+# HDMI-CEC
+lib/hw/hdmi_cec.default.so:lib/hw/hdmi_cec.amazon.mt8127.so
+
 # NVRAM
 bin/nvram_agent_binder
 lib/libcustom_nvram.so

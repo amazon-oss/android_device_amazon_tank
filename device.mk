@@ -30,6 +30,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.heapstartsize=8m \
     dalvik.vm.heaptargetutilization=0.75
 
+# HDMI-CEC
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.hdmi.cec.xml:system/etc/permissions/android.hardware.hdmi.cec.xml
+
+PRODUCT_PACKAGES += \
+    hdmi_cec.mt8127
+
 # HWUI
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.hwui.layer_cache_size=31 \
