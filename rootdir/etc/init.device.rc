@@ -31,6 +31,23 @@ service mdp_server /system/bin/mdp_server
     user system
     group system graphics
 
+# DRM
+service amzn_drmprov /system/bin/amzn_drmprov_check
+    class main
+    user root
+    group system
+    oneshot
+
+service drmkey_backup /system/bin/amzn_drmprov_tool --backup
+    class main
+    user root
+    group system
+    disabled
+    oneshot
+
+on property:sys.amzn_drm.need_backup=1
+    start drmkey_backup
+
 # HDMI
 service hdmi /system/bin/hdmi
     class main

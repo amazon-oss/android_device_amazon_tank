@@ -42,6 +42,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.heapstartsize=8m \
     dalvik.vm.heaptargetutilization=0.75
 
+# DRM
+PRODUCT_PACKAGES += \
+    libcrypto_shim \
+    libutils_shim
+
 # HDMI-CEC
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.hdmi.cec.xml:system/etc/permissions/android.hardware.hdmi.cec.xml

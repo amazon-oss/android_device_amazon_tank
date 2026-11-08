@@ -23,6 +23,17 @@ lib/libhdmi.so
 lib/libmtk_mali_user.so
 lib/libqservice.so
 
+# DRM
+bin/amzn_dha_hmac
+bin/amzn_dha_tool
+bin/amzn_drmprov_check
+bin/amzn_drmprov_tool
+bin/idme
+lib/hw/amzn_dha.mt8127.so
+lib/hw/amzn_drmprov.mt8127.so
+lib/lib_uree_mtk_modular_drm.so
+vendor/lib/liboemcrypto.so
+
 # HDMI
 bin/hdmi
 lib/libhdmiservice.so
@@ -71,3 +82,6 @@ lib/liburee_meta_drmkeyinstall_v2.so
 # Wi-Fi
 vendor/firmware/brcm/bcm43569a2-firmware.bin
 vendor/firmware/brcm/bcm43569a2.nvm
+
+# DRM - from checkers-user 6.0 NS6572 6451 amz-p,release-keys
+vendor/lib/mediadrm/libwvdrmengine.so|9e1dd369a3da1e13780c2dcef8d1b3ece0945cf0

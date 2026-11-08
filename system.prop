@@ -5,6 +5,9 @@ ro.bt.bdaddr_path=/data/misc/bluetooth/bdaddr
 persist.sys.resolution.auto=1
 ro.sf.lcd_density=320
 
+# DRM
+mtk_in_house_tee_support=true
+
 # HDMI-CEC
 ro.hdmi.device_type=4
 
