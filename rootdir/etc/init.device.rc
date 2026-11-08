@@ -3,8 +3,18 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+on post-fs-data
+    # HDMI
+    chmod 0664 /dev/hdmitx
+
 # Display
 service mdp_server /system/bin/mdp_server
     class main
     user system
     group system graphics
+
+# HDMI
+service hdmi /system/bin/hdmi
+    class main
+    user system
+    group system net_admin inet

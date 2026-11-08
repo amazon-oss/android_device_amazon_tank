@@ -11,6 +11,10 @@ lib/libhdmi.so
 lib/libmtk_mali_user.so
 lib/libqservice.so
 
+# HDMI
+bin/hdmi
+lib/libhdmiservice.so
+
 # NVRAM
 bin/nvram_agent_binder
 lib/libcustom_nvram.so
