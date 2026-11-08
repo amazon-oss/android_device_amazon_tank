@@ -9,6 +9,10 @@ function blob_fixup() {
         bin/mdp_server|lib/libdpframework.so|lib/libqservice.so)
             add_needed libbinder_shim.so "${2}"
             ;;
+        lib/hw/audio.btle.default.so)
+            # Allocate the Nougat sized audio_stream_in
+            sigscan "64 58 44 21 25 60" "64 58 48 21" "${2}"
+            ;;
         lib/hw/hwcomposer.mt8127.so)
             # Return the config index from getActiveConfig, not the HDMI mode
             sigscan "07 b5 49 b1 00 91 06 20 08 49 09 4a 09 4b 79 44" \

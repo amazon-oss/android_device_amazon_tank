@@ -4,6 +4,10 @@
 #
 
 on post-fs-data
+    # Audio
+    chmod 0660 /dev/bleremote_audio
+    chown system audio /dev/bleremote_audio
+
     # Bluetooth
     chmod 0660 /dev/ttyMT1
     chown bluetooth bluetooth /dev/ttyMT1
