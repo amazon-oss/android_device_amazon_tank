@@ -26,6 +26,14 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 6583598080
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
+# Wi-Fi
+BOARD_HOSTAPD_PRIVATE_LIB := lib_driver_cmd_bcmdhd
+BOARD_WLAN_DEVICE := bcmdhd
+BOARD_WPA_SUPPLICANT_PRIVATE_LIB := lib_driver_cmd_bcmdhd
+WIFI_DRIVER_MODULE_NAME := bcmdhd
+WIFI_DRIVER_MODULE_PATH := /system/lib/modules/bcmdhd.ko
+WIFI_DRIVER_OPERSTATE_PATH := /sys/class/net/wlan0/operstate
+
 # Inherit from mt8127-common
 include device/amazon/mt8127-common/BoardConfigCommon.mk
 

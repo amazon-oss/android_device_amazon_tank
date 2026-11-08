@@ -7,3 +7,6 @@ ro.hdmi.device_type=4
 
 # SurfaceFlinger
 debug.sf.latch_unsignaled=1
+
+# Wi-Fi
+wifi.interface=wlan0

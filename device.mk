@@ -56,6 +56,13 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/init.device.rc:root/init.device.rc
 
+# Wi-Fi
+PRODUCT_COPY_FILES += \
+    hardware/broadcom/wlan/bcmdhd/config/wpa_supplicant_overlay.conf:system/etc/wifi/wpa_supplicant_overlay.conf
+
+PRODUCT_PACKAGES += \
+    wpa_supplicant.conf
+
 # Inherit from mt8127-common
 $(call inherit-product, device/amazon/mt8127-common/mt8127.mk)
 

@@ -44,3 +44,7 @@ lib/libhwm.so
 bin/kisd
 lib/lib_uree_mtk_video_secure_al.so
 lib/liburee_meta_drmkeyinstall_v2.so
+
+# Wi-Fi
+vendor/firmware/brcm/bcm43569a2-firmware.bin
+vendor/firmware/brcm/bcm43569a2.nvm
