@@ -49,6 +49,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     hdmi_cec.mt8127
 
+# Hearth
+PRODUCT_PACKAGES += \
+    Hearth
+
 # HWUI
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.hwui.layer_cache_size=31 \

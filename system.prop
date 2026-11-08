@@ -8,6 +8,9 @@ ro.sf.lcd_density=320
 # HDMI-CEC
 ro.hdmi.device_type=4
 
+# Hearth
+ro.hearth.ozwpan_iface=p2p-wlan0-*
+
 # SurfaceFlinger
 debug.sf.latch_unsignaled=1
 
