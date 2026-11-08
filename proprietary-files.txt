@@ -1,5 +1,16 @@
 # Unpinned blobs from full_tank-user 5.1.1 LVY48F 288.6.8.8_user_688806320 release-keys
 
+# Display
+bin/mdp_server
+lib/hw/gralloc.mt8127.so
+lib/hw/hwcomposer.mt8127.so
+lib/libMali.so
+lib/libbwc.so
+lib/libdpframework.so
+lib/libhdmi.so
+lib/libmtk_mali_user.so
+lib/libqservice.so
+
 # TEE
 bin/kisd
 lib/lib_uree_mtk_video_secure_al.so

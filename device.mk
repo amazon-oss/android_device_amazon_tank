@@ -36,6 +36,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.hwui.r_buffer_cache_size=8 \
     ro.hwui.texture_cache_size=45
 
+# Rootdir
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/etc/init.device.rc:root/init.device.rc
+
 # Inherit from mt8127-common
 $(call inherit-product, device/amazon/mt8127-common/mt8127.mk)
 

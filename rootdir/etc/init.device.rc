@@ -1,0 +1,10 @@
+#
+# SPDX-FileCopyrightText: The LineageOS Project
+# SPDX-License-Identifier: Apache-2.0
+#
+
+# Display
+service mdp_server /system/bin/mdp_server
+    class main
+    user system
+    group system graphics
