@@ -14,6 +14,9 @@ ro.hdmi.device_type=4
 # Hearth
 ro.hearth.ozwpan_iface=p2p-wlan0-*
 
+# Netflix
+ro.nrdp.modelgroup=FIRETVSTICK2016
+
 # SurfaceFlinger
 debug.sf.latch_unsignaled=1
 
