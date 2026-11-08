@@ -11,6 +11,11 @@ lib/libhdmi.so
 lib/libmtk_mali_user.so
 lib/libqservice.so
 
+# NVRAM
+bin/nvram_agent_binder
+lib/libcustom_nvram.so
+lib/libhwm.so
+
 # TEE
 bin/kisd
 lib/lib_uree_mtk_video_secure_al.so
