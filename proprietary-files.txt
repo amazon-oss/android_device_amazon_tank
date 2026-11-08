@@ -1,1 +1,6 @@
-#
+# Unpinned blobs from full_tank-user 5.1.1 LVY48F 288.6.8.8_user_688806320 release-keys
+
+# TEE
+bin/kisd
+lib/lib_uree_mtk_video_secure_al.so
+lib/liburee_meta_drmkeyinstall_v2.so
