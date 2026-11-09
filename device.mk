@@ -47,6 +47,10 @@ PRODUCT_PACKAGES += \
     libcrypto_shim \
     libutils_shim
 
+# Ethernet
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.ethernet.xml:system/etc/permissions/android.hardware.ethernet.xml
+
 # HDMI-CEC
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.hdmi.cec.xml:system/etc/permissions/android.hardware.hdmi.cec.xml
