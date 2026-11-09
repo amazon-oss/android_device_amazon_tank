@@ -77,6 +77,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/permissions/nrdp.modelgroup.xml:system/etc/permissions/nrdp.modelgroup.xml
 
+# Power
+PRODUCT_PACKAGES += \
+    power.mt8127
+
 # Rootdir
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/bin/init.btmac.sh:system/bin/init.btmac.sh \
